@@ -35,8 +35,11 @@ run: `gradle run`
 
 ## WikiServices
 
-#### Request  [link](https://www.google.com)
-##### Class name: `abstract class Request`
+#### Request 
+[link](https://www.google.com)
+
+##### Class name: 
+`abstract class Request`
 
 ##### Methods:
 * Request(String uri)
