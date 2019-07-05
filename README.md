@@ -4,8 +4,8 @@
 
 * Google Docs / Drive API 
 * MediaWiki REST API
-* Java 8
-* Gradle
+* Java JDK 12
+* Gradle 5.5
 
 
 ### Program Summary
