@@ -32,17 +32,27 @@ run: `gradle run`
 * GoogleServices
 * WikiServices
 
+## WikiServices
 
-##### Request
+##### Request 
+`abstract class Request`
 
 ##### Response
+`class Response`
 
 ##### Get
+`class Get`
 
 ##### WikiService
+`public class WikiService`
+
+
+## GoogleServices
 
 ##### GoogleService
+`class GoogleService`
 
 ##### GoogleDocsService
+`public class GoogleDocsService`
 
 <hr>
