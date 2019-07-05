@@ -28,3 +28,21 @@ run: `gradle run`
 
 ### Program Implementation:
 
+#### packages:
+* GoogleServices
+* WikiServices
+
+
+##### Request
+
+##### Response
+
+##### Get
+
+##### WikiService
+
+##### GoogleService
+
+##### GoogleDocsService
+
+<hr>
