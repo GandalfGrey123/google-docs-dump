@@ -1,5 +1,13 @@
 # Google Docs Dump
 
+#### Technology Stack
+
+* Google Docs / Drive API 
+* MediaWiki REST API
+* Java 8
+* Gradle
+
+
 ### Program Summary
 
 This program will get wiki article data from the MediaWiki Rest Endpoint, 
