@@ -35,7 +35,7 @@ run: `gradle run`
 
 ## Package - WikiServices
 
-#### Request  - [link](#)
+### Request  - [link](#)
 
 ##### Class name: 
 `abstract class Request`
@@ -62,7 +62,7 @@ setRequiredHeaders()
 <br>
 
 
-#### Response - [link](#)
+### Response - [link](#)
 
 ##### Class name: 
 `class Response`
@@ -95,7 +95,7 @@ read()
 <br>
 
 
-##### Get - [link](#)
+### Get - [link](#)
 
 ##### Class name: 
 `class Get`
@@ -121,13 +121,12 @@ execute()
 ````
 <br>
 
-##### WikiService - [link](#)
+### WikiService - [link](#)
 
 ##### Class name: 
-`class WikiService`
+`public class WikiService`
 
-package sub class created from Request class 
-implements a HTTP GET request to URI endpoint
+public class used to provide access to MediaWiki REST API
 
 ##### Methods:
 * getArticle()
@@ -143,12 +142,12 @@ getArticle()
 
 ## Package - GoogleServices
 
-##### GoogleService [link](#)
+### GoogleService - [link](#)
 `class GoogleService`
 
 <br>
 
-##### GoogleDocsService [link](#)
+### GoogleDocsService - [link](#)
 `public class GoogleDocsService`
 
 <br>
