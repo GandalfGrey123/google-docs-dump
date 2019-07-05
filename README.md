@@ -37,9 +37,21 @@ run: `gradle run`
 
 ##### Request  [link](https://www.google.com)
 `abstract class Request`
+* Request(String uri)
 * execute()
+* setRequiredHeaders()
+
 ````
-execute() abstract method overrided by child Request class
+Request(String uri)
+  constructor will make the HTTP connection using java.net.HttpURLConnection
+  the constructor will also set the HTTP headers
+  
+execute()
+  abstract method overriden by Request child class , used to make the HTTP request
+  
+setRequiredHeaders() 
+  called in constructor to set http request headers
+
 ````
 
 
