@@ -37,14 +37,22 @@ run: `gradle run`
 ##### Request 
 `abstract class Request`
 
+<br>
+
 ##### Response
 `class Response`
+
+<br>
 
 ##### Get
 `class Get`
 
+<br>
+
 ##### WikiService
 `public class WikiService`
+
+<br>
 
 
 ## GoogleServices
@@ -52,7 +60,11 @@ run: `gradle run`
 ##### GoogleService
 `class GoogleService`
 
+<br>
+
 ##### GoogleDocsService
 `public class GoogleDocsService`
+
+<br>
 
 <hr>
