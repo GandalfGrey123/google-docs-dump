@@ -33,12 +33,14 @@ run: `gradle run`
 * GoogleServices
 * WikiServices
 
-## WikiServices
+## Package - WikiServices
 
-#### Request  - [link](https://www.google.com)
+#### Request  - [link](#)
 
 ##### Class name: 
 `abstract class Request`
+
+abstract class used to build HTTP classes  
 
 ##### Methods:
 * Request(String uri)
@@ -57,14 +59,15 @@ setRequiredHeaders()
   called in constructor to set http request headers
 
 ````
-
-
 <br>
 
-#### Response - [link](https://www.google.com)
+
+#### Response - [link](#)
 
 ##### Class name: 
-`abstract class Response`
+`class Response`
+
+package class used by the Request sub classes
 
 ##### Methods:
 * Response(HttpURLConnection connection)
@@ -89,28 +92,63 @@ read()
   private method read() will read all the data from the HTTP connection response body
   
 ````
-
 <br>
 
-##### Get [link](https://www.google.com)
+
+##### Get - [link](#)
+
+##### Class name: 
 `class Get`
 
+package sub class created from Request class 
+implements a HTTP GET request to URI endpoint
+
+##### Methods:
+* Get(String uri)
+* execute()
+
+````
+Get()
+  constructor uses super class constructor to make new HTTP connection
+  sets the Request method to get
+  throws exception IOException and MalformedURLException
+  
+execute()
+  makes a new Response object from the get request
+  disconnects the HTTP connection
+  returns response body in JSON String
+  throws exception IOException
+````
 <br>
 
-##### WikiService [link](https://www.google.com)
-`public class WikiService`
+##### WikiService - [link](#)
 
+##### Class name: 
+`class WikiService`
+
+package sub class created from Request class 
+implements a HTTP GET request to URI endpoint
+
+##### Methods:
+* getArticle()
+
+````
+getArticle()
+  static method getAritcle()
+  takes String as param to build uri search query
+  uses Get(uri).execute() to make an HTTP get request to MediaWiki REST endpoint
+  returns response body as JSON string
+````
 <br>
 
+## Package - GoogleServices
 
-## GoogleServices
-
-##### GoogleService [link](https://www.google.com)
+##### GoogleService [link](#)
 `class GoogleService`
 
 <br>
 
-##### GoogleDocsService [link](https://www.google.com)
+##### GoogleDocsService [link](#)
 `public class GoogleDocsService`
 
 <br>
