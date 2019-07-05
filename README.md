@@ -21,6 +21,7 @@ create a new Google Document and store it in a Google Drive
 ### How to Run Program:
 
 run: `gradle run` 
+> run this command in the root folder
 > Google Docs Requires gradle version 2.3 or greater
 
 <hr>
@@ -34,22 +35,27 @@ run: `gradle run`
 
 ## WikiServices
 
-##### Request 
+##### Request  [link](https://www.google.com)
 `abstract class Request`
+* execute()
+````
+execute() abstract method overrided by child Request class
+````
+
 
 <br>
 
-##### Response
+##### Response [link](https://www.google.com)
 `class Response`
 
 <br>
 
-##### Get
+##### Get [link](https://www.google.com)
 `class Get`
 
 <br>
 
-##### WikiService
+##### WikiService [link](https://www.google.com)
 `public class WikiService`
 
 <br>
@@ -57,12 +63,12 @@ run: `gradle run`
 
 ## GoogleServices
 
-##### GoogleService
+##### GoogleService [link](https://www.google.com)
 `class GoogleService`
 
 <br>
 
-##### GoogleDocsService
+##### GoogleDocsService [link](https://www.google.com)
 `public class GoogleDocsService`
 
 <br>
