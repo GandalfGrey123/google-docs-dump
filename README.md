@@ -18,5 +18,8 @@ create a new Google Document and store it in a Google Drive
 ### How to Run Program
 
 run: `gradle run` 
+> Google Docs Requires gradle version 2.3 or greater
 
+
+### Program Implementation
 
