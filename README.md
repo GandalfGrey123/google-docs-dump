@@ -35,8 +35,7 @@ run: `gradle run`
 
 ## WikiServices
 
-#### Request 
-[link](https://www.google.com)
+#### Request  - [link](https://www.google.com)
 
 ##### Class name: 
 `abstract class Request`
@@ -62,8 +61,34 @@ setRequiredHeaders()
 
 <br>
 
-##### Response [link](https://www.google.com)
-`class Response`
+#### Response - [link](https://www.google.com)
+
+##### Class name: 
+`abstract class Response`
+
+##### Methods:
+* Response(HttpURLConnection connection)
+* getStatusCode()
+* getBody()
+* createReader()
+* read()
+
+````
+Response()
+  constructor takes a HTTP connection as param and reads the body from the response
+  
+getStatusCode() getBody()
+  class getters
+  return the status code as int and body as String
+
+createReader()
+  private method used to read HTTP input stream
+  creates an java.io.InputStreamReader for the incomming data from the HTTP connection 
+  
+read()
+  private method read() will read all the data from the HTTP connection response body
+  
+````
 
 <br>
 
