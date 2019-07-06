@@ -21,10 +21,7 @@ class GoogleService {
     private final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private final String TOKENS_DIRECTORY_PATH = "tokens";
     private final List<String> SCOPES = Arrays.asList( "https://www.googleapis.com/auth/documents",
-                                                       "https://www.googleapis.com/auth/drive",
-                                                       "https://www.googleapis.com/auth/drive.file",
-                                                       "https://www.googleapis.com/auth/drive.activity",
-                                                       "https://www.googleapis.com/auth/drive.metadata");
+                                                       "https://www.googleapis.com/auth/drive");
 
     private final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
