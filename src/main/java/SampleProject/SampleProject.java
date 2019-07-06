@@ -10,22 +10,22 @@ import java.io.FileReader;
 public class SampleProject{
 
   public static void main(String[] args) throws Exception{
-  	String configFilePath = "src/main/config/config";      
+    
+    String configFilePath = "src/main/config/config";      
     File file = new File(configFilePath);
+        
     BufferedReader br = new BufferedReader(new FileReader(file)); 
+    String nextSearchTerm; 
+    String responseBodyData ="";
 
-    // read each search term from the config file
-    // then make wiki API call with search term
- 	String nextSearchTerm; 
- 	String responseData ="";
-  	while ((nextSearchTerm = br.readLine()) != null){
-  	  responseData +=  WikiService.getArticle(nextSearchTerm);
-  	  responseData += "\n\n";
-  	} 
+    //read each search term from the config
+    while ((nextSearchTerm = br.readLine()) != null){
+      responseBodyData +=  WikiService.getArticle(nextSearchTerm);
+      responseBodyData += "\n\n";
+    } 
 
-  	
+    //create new google doc and dump responseBodyData in doc
+  	GoogleDocsService gd = new GoogleDocsService();
+    String id = gd.createNewDoc("SampleProjectDumpDoc",responseBodyData);
   }
 }
-
-
-  
