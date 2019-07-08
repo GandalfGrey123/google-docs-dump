@@ -7,10 +7,10 @@ import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class SampleProject{
 
+public class SampleProject{
+ 
   public static void main(String[] args) throws Exception{
-    
     String configFilePath = "src/main/config/config";      
     File file = new File(configFilePath);
         
@@ -20,12 +20,14 @@ public class SampleProject{
 
     //read each search term from the config
     while ((nextSearchTerm = br.readLine()) != null){
-      responseBodyData +=  WikiService.getArticle(nextSearchTerm);
-      responseBodyData += "\n\n";
+     responseBodyData += "Search Term: " + nextSearchTerm +"\n";
+     responseBodyData += WikiService.getArticle(nextSearchTerm);
+     responseBodyData += "\n\n";
     } 
 
     //create new google doc and dump responseBodyData in doc
-  	GoogleDocsService gd = new GoogleDocsService();
+    GoogleDocsService gd = new GoogleDocsService();
     String id = gd.createNewDoc("SampleProjectDumpDoc",responseBodyData);
+    System.out.println("Google doc created , document id: " + id + "\n");
   }
 }
